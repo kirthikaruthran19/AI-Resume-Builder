@@ -1,0 +1,371 @@
+/* ===========================================================
+   HERO SECTION
+=========================================================== */
+
+.home-hero{
+
+    width:100%;
+
+    padding:90px 40px 80px;
+
+    background:linear-gradient(
+        180deg,
+        #F8FAFC 0%,
+        #FFFFFF 100%
+    );
+
+}
+
+.home-hero-container{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 520px;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+/* ===========================================================
+   LEFT CONTENT
+=========================================================== */
+
+.home-hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.home-hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:26px;
+
+}
+
+.home-hero-content h1{
+
+    margin:0;
+
+    color:#0F172A;
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+.home-hero-content h1 span{
+
+    color:#2563EB;
+
+}
+
+.home-hero-content p{
+
+    margin:28px 0 0;
+
+    max-width:620px;
+
+    color:#64748B;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+.home-hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:42px;
+
+}
+
+.home-hero-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:18px 34px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #1D4ED8
+    );
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.home-hero-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 28px 55px rgba(37,99,235,.35);
+
+}
+
+.home-hero-secondary{
+
+    padding:18px 34px;
+
+    border:2px solid #2563EB;
+
+    border-radius:16px;
+
+    background:#FFFFFF;
+
+    color:#2563EB;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.home-hero-secondary:hover{
+
+    background:#EFF6FF;
+
+}
+
+/* ===========================================================
+   FEATURES
+=========================================================== */
+
+.home-hero-features{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    margin-top:46px;
+
+}
+
+.home-hero-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#334155;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.home-hero-features svg{
+
+    color:#22C55E;
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   PREVIEW
+=========================================================== */
+
+.home-hero-preview{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width:1200px){
+
+    .home-hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+    .home-hero-content{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .home-hero-content p{
+
+        max-width:700px;
+
+    }
+
+    .home-hero-preview{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .home-hero{
+
+        padding:70px 24px;
+
+    }
+
+    .home-hero-content h1{
+
+        font-size:50px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home-hero-content h1{
+
+        font-size:42px;
+
+    }
+
+    .home-hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .home-hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .home-hero-primary,
+
+    .home-hero-secondary{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .home-hero-features{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .home-hero{
+
+        padding:60px 18px;
+
+    }
+
+    .home-hero-content h1{
+
+        font-size:34px;
+
+    }
+
+    .home-hero-content p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    .home-hero-badge{
+
+        font-size:13px;
+
+    }
+
+}

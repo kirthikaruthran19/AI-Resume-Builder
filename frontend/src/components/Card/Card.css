@@ -1,0 +1,19 @@
+.card{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:
+
+    var(--shadow-lg);
+
+    border:
+
+    1px solid rgba(255,255,255,.3);
+
+}

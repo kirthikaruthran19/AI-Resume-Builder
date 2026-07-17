@@ -1,0 +1,163 @@
+/* ==========================================
+   Delete Resume Modal
+========================================== */
+
+.modal-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(15, 23, 42, 0.6);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    backdrop-filter: blur(6px);
+
+    padding: 20px;
+
+}
+
+.delete-modal {
+
+    width: 100%;
+
+    max-width: 460px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 32px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+    animation: modalFade .25s ease;
+
+}
+
+.delete-modal h2 {
+
+    margin: 0 0 12px;
+
+    font-size: 24px;
+
+    color: #0F172A;
+
+}
+
+.delete-modal p {
+
+    margin: 0;
+
+    line-height: 1.7;
+
+    color: #64748B;
+
+}
+
+.modal-actions {
+
+    margin-top: 28px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+}
+
+.modal-btn {
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px 22px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.modal-btn.cancel {
+
+    background: #E2E8F0;
+
+    color: #334155;
+
+}
+
+.modal-btn.cancel:hover {
+
+    background: #CBD5E1;
+
+}
+
+.modal-btn.delete {
+
+    background: #DC2626;
+
+    color: #ffffff;
+
+}
+
+.modal-btn.delete:hover {
+
+    background: #B91C1C;
+
+}
+
+@keyframes modalFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px) scale(.96);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .delete-modal {
+
+        padding: 24px;
+
+    }
+
+    .modal-actions {
+
+        flex-direction: column;
+
+    }
+
+    .modal-btn {
+
+        width: 100%;
+
+    }
+
+}

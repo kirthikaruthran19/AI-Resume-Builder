@@ -1,0 +1,316 @@
+.builder-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #e2e8f0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 28px;
+
+    box-shadow:0 2px 12px rgba(15,23,42,.05);
+
+}
+
+.builder-header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.builder-back-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    background:#f1f5f9;
+
+    color:#334155;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.builder-back-btn:hover{
+
+    background:#e2e8f0;
+
+}
+
+.builder-title h1{
+
+    margin:0;
+
+    font-size:26px;
+
+    color:#0f172a;
+
+}
+
+.builder-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:8px;
+
+}
+
+.template-badge{
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+    padding:5px 12px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.save-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#16a34a;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.builder-header-actions{
+
+    display:flex;
+
+    gap:14px;
+
+}
+
+.builder-header-actions button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:12px;
+
+    padding:11px 18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.ats-btn{
+
+    background:#ecfeff;
+
+    color:#0891b2;
+
+}
+
+.ats-btn:hover{
+
+    background:#cffafe;
+
+}
+
+.download-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:900px){
+
+    .builder-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .builder-header-actions{
+
+        width:100%;
+
+        justify-content:flex-end;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .builder-header{
+
+        padding:18px;
+
+    }
+
+    .builder-header-left{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .builder-header-actions{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .builder-header-actions button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+.download-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.download-btn:disabled:hover {
+    transform: none;
+}
+
+/* ==============================
+   ATS Modal
+============================== */
+
+.ats-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.ats-modal {
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+.ats-modal h1{
+    font-size:48px;
+    color:#2563eb;
+    margin:15px 0;
+}
+
+.ats-modal h2{
+    margin-bottom:10px;
+}
+
+.ats-modal ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.ats-modal li{
+    margin-bottom:10px;
+}
+
+.ats-close{
+    position:absolute;
+    right:15px;
+    top:15px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:20px;
+}
+
+
+.template-select{
+
+    border:1px solid #dbe3ff;
+
+    border-radius:10px;
+
+    padding:8px 14px;
+
+    background:white;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    outline:none;
+
+}

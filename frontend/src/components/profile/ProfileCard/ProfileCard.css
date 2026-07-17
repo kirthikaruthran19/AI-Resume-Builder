@@ -1,0 +1,75 @@
+.profile-card {
+    width: 320px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f3f4f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.upload-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.3);
+}
+
+.upload-btn:hover {
+    transform: scale(1.08);
+    background: #4338ca;
+}
+
+.upload-btn svg {
+    font-size: 18px;
+}
+
+.profile-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #111827;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .profile-image,
+    .profile-image img {
+        width: 130px;
+        height: 130px;
+    }
+}

@@ -1,0 +1,287 @@
+/* ==========================================
+   Experience Form
+========================================== */
+
+.experience-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.form-header p {
+    margin-top: 0.4rem;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.experience-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+/* ==========================================
+   Grid
+========================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+    gap: 1.4rem;
+}
+
+/* ==========================================
+   Form Group
+========================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #334155;
+    font-size: 0.92rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #dbe3ec;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ==========================================
+   Checkbox
+========================================== */
+
+.checkbox-group {
+    margin: 1.5rem 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #334155;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+}
+
+/* ==========================================
+   Validation
+========================================== */
+
+.error {
+    color: #dc2626;
+    font-size: 0.82rem;
+    margin-top: 0.25rem;
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 0.85rem 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.btn-edit {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #d97706;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+}
+
+.btn:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   Experience List
+========================================== */
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.experience-list h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 1.3rem;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    box-shadow: 0 6px 20px rgba(15,23,42,.05);
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-details h4 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.experience-details h5 {
+    margin: .4rem 0 1rem;
+    color: #2563eb;
+}
+
+.experience-details p {
+    margin: .4rem 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.experience-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+}
+
+/* ==========================================
+   Empty State
+========================================== */
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    color: #64748b;
+    background: #f8fafc;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width: 768px) {
+
+    .experience-card {
+        padding: 1.25rem;
+    }
+
+    .experience-item {
+        flex-direction: column;
+    }
+
+    .experience-actions {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+}

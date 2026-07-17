@@ -1,0 +1,87 @@
+/* ========================================
+   LOGIN PAGE
+   Login-specific styles only
+======================================== */
+
+/* Success message animation */
+
+.auth-success{
+
+    animation: loginFadeIn .4s ease;
+
+}
+
+@keyframes loginFadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* Login card entrance enhancement */
+
+.auth-card{
+
+    animation: loginCard .5s ease;
+
+}
+
+@keyframes loginCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* Forgot password hover */
+
+.auth-options a{
+
+    transition:.3s;
+
+}
+
+.auth-options a:hover{
+
+    color:#1D4ED8;
+
+}
+
+
+/* Login button loading */
+
+.auth-btn:disabled{
+
+    opacity:.75;
+
+    cursor:not-allowed;
+
+}

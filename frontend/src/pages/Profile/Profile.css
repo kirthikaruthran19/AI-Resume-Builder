@@ -1,0 +1,182 @@
+/* ==========================================================
+   PROFILE PAGE
+========================================================== */
+
+.profile-page {
+    min-height: 100vh;
+    padding: 110px 20px 60px;
+    background: var(--background-color);
+}
+
+.profile-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+========================================================== */
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* ==========================================================
+   GLASS CARD
+========================================================== */
+
+.profile-content > *,
+.profile-right > * {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.profile-content > *:hover,
+.profile-right > *:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.12);
+
+    border-color: rgba(99, 102, 241, .25);
+}
+
+
+/* ==========================================================
+   SPACING
+========================================================== */
+
+.profile-content > * {
+    padding: 30px;
+}
+
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.profile-content {
+    animation: profileFade .45s ease;
+}
+
+@keyframes profileFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .profile-page {
+        padding: 95px 18px 50px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .profile-content > * {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .profile-page {
+        padding: 85px 15px 40px;
+    }
+
+    .profile-header {
+        margin-bottom: 32px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .profile-header p {
+        font-size: .92rem;
+    }
+
+    .profile-content {
+        gap: 18px;
+    }
+
+    .profile-right {
+        gap: 18px;
+    }
+
+    .profile-content > * {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+}

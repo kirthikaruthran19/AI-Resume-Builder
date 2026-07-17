@@ -1,0 +1,73 @@
+/* ===========================
+        RESUME GRID
+=========================== */
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 28px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.resume-grid > div {
+    width: 100%;
+}
+
+.resume-grid-empty {
+    width: 100%;
+    padding: 80px 30px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.resume-grid-empty h3 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.resume-grid-empty p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+    .resume-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-grid {
+        gap: 16px;
+    }
+
+    .resume-grid-empty {
+        padding: 50px 20px;
+    }
+
+    .resume-grid-empty h3 {
+        font-size: 22px;
+    }
+
+    .resume-grid-empty p {
+        font-size: 15px;
+    }
+}

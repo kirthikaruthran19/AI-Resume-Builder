@@ -1,0 +1,118 @@
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,23,42,.45);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+    backdrop-filter:blur(6px);
+
+}
+
+.create-modal{
+
+    width:100%;
+
+    max-width:500px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.create-modal h2{
+
+    margin-bottom:30px;
+
+    color:#0F172A;
+
+}
+
+.modal-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.modal-field label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.modal-field input,
+.modal-field select{
+
+    height:52px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    font-size:15px;
+
+}
+
+.modal-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.cancel-btn{
+
+    border:none;
+
+    background:#E2E8F0;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.create-btn{
+
+    border:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}

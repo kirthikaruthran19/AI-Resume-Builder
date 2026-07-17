@@ -1,0 +1,19 @@
+.resume-page{
+
+    min-height:100vh;
+
+    background:#F8FAFC;
+
+    padding:40px;
+
+}
+
+@media(max-width:768px){
+
+.resume-page{
+
+    padding:20px;
+
+}
+
+}

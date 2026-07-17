@@ -1,0 +1,142 @@
+/* ==========================================================
+   PROFILE FORM
+========================================================== */
+
+.profile-form-card {
+    width: 100%;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* ==========================================================
+   FORM GROUP
+========================================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.form-group input {
+    width: 100%;
+    height: 52px;
+
+    padding: 0 18px;
+
+    border: 1px solid rgba(99, 102, 241, 0.12);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    color: var(--text-color);
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        transform .2s ease;
+}
+
+.form-group input::placeholder {
+    color: var(--text-light);
+}
+
+
+/* ==========================================================
+   INPUT FOCUS
+========================================================== */
+
+.form-group input:focus {
+
+    border-color: #6366f1;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.12);
+
+    transform: translateY(-1px);
+
+}
+
+
+/* ==========================================================
+   INPUT HOVER
+========================================================== */
+
+.form-group input:hover {
+
+    border-color: rgba(99, 102, 241, .28);
+
+}
+
+
+/* ==========================================================
+   DISABLED
+========================================================== */
+
+.form-group input:disabled {
+
+    cursor: not-allowed;
+
+    background: #f6f7fb;
+
+    color: #9ca3af;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .profile-form {
+        gap: 20px;
+    }
+
+    .form-group input {
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .profile-form {
+        gap: 18px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input {
+        height: 48px;
+        padding: 0 16px;
+        font-size: 0.9rem;
+        border-radius: 12px;
+    }
+
+}

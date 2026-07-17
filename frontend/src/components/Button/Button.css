@@ -1,0 +1,55 @@
+.btn{
+
+    width:100%;
+
+    height:56px;
+
+    border-radius:14px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+    );
+
+    transition:var(--transition);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,.25);
+
+}
+
+.btn:hover{
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0 25px 40px rgba(37,99,235,.35);
+
+}
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+.btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}

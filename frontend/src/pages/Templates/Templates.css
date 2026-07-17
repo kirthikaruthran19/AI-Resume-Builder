@@ -1,0 +1,118 @@
+.templates-page {
+    min-height: 100vh;
+    padding: 40px 8%;
+    background: #f8fafc;
+}
+
+.templates-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.templates-header h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.templates-header p {
+    font-size: 1.05rem;
+    color: #64748b;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.selected-template {
+    margin-top: 50px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+    animation: fadeIn .4s ease;
+}
+
+.selected-template h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.selected-template h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.selected-template p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 992px) {
+
+    .templates-page {
+        padding: 30px 5%;
+    }
+
+    .templates-header h1 {
+        font-size: 2.1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .templates-page {
+        padding: 25px 20px;
+    }
+
+    .templates-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .templates-header p {
+        font-size: .95rem;
+    }
+
+    .templates-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .templates-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .selected-template {
+        padding: 20px;
+    }
+
+}

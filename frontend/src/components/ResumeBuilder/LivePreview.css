@@ -1,0 +1,702 @@
+/* ==========================================
+   Live Preview
+========================================== */
+
+.live-preview{
+
+    flex:1;
+
+    min-width:380px;
+
+    max-width:500px;
+
+    background:#f8fafc;
+
+    padding:24px;
+
+    overflow-y:auto;
+
+    height:calc(100vh - 80px);
+
+}
+
+/* ==========================================
+   Resume Paper
+========================================== */
+
+.preview-paper{
+
+    background:#ffffff;
+
+    min-height:1100px;
+
+    border-radius:16px;
+
+    padding:40px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.08);
+
+    transition:all .35s ease;
+
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.preview-header{
+
+    text-align:center;
+
+    border-bottom:2px solid #e2e8f0;
+
+    padding-bottom:24px;
+
+    margin-bottom:24px;
+
+}
+
+.preview-header h1{
+
+    margin:0;
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    font-weight:700;
+
+}
+
+.preview-header h3{
+
+    margin-top:10px;
+
+    color:#2563eb;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+   Contact
+========================================== */
+
+.preview-contact{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+}
+
+.preview-contact div{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    color:#475569;
+
+    font-size:14px;
+
+    word-break:break-word;
+
+}
+
+.preview-contact svg{
+
+    color:#2563eb;
+
+    flex-shrink:0;
+
+    margin-top:2px;
+
+}
+
+/* ==========================================
+   Social Links
+========================================== */
+
+.preview-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.preview-links div{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    font-size:14px;
+
+    color:#334155;
+
+    word-break:break-word;
+
+}
+
+.preview-links svg{
+
+    color:#2563eb;
+
+    flex-shrink:0;
+
+    margin-top:2px;
+
+}
+
+/* ==========================================
+   Sections
+========================================== */
+
+.preview-section{
+
+    margin-bottom:32px;
+
+}
+
+.preview-section h2{
+
+    font-size:18px;
+
+    color:#2563eb;
+
+    border-bottom:1px solid #e2e8f0;
+
+    padding-bottom:8px;
+
+    margin-bottom:16px;
+
+}
+
+.preview-section p{
+
+    color:#475569;
+
+    line-height:1.7;
+
+    margin:0;
+
+}
+
+/* ==========================================
+   Education / Experience
+========================================== */
+
+.preview-item{
+
+    margin-bottom:22px;
+
+}
+
+.preview-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.preview-item h3{
+
+    margin:0;
+
+    color:#0f172a;
+
+    font-size:17px;
+
+}
+
+.preview-item strong{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#334155;
+
+    font-weight:600;
+
+}
+
+.preview-item p{
+
+    margin-top:6px;
+
+    color:#64748b;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   Skill Tags
+========================================== */
+
+.preview-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.preview-tags span{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    border:1px solid #bfdbfe;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   Scrollbar
+========================================== */
+
+.live-preview::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.live-preview::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:999px;
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media(max-width:1200px){
+
+    .live-preview{
+
+        max-width:100%;
+
+        min-width:100%;
+
+        height:auto;
+
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media(max-width:768px){
+
+    .preview-paper{
+
+        padding:24px;
+
+    }
+
+    .preview-header h1{
+
+        font-size:28px;
+
+    }
+
+    .preview-header h3{
+
+        font-size:16px;
+
+    }
+
+    .preview-section h2{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ======================================
+   Resume Templates
+====================================== */
+
+.preview-header.professional{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    padding:30px;
+
+}
+
+.preview-header.modern{
+
+    background:#16a34a;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    padding:30px;
+
+}
+
+.preview-header.minimal{
+
+    background:#111827;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    padding:30px;
+
+}
+
+.preview-header.professional h1,
+.preview-header.modern h1,
+.preview-header.minimal h1{
+
+    color:#fff;
+
+}
+
+.preview-header.professional h3,
+.preview-header.modern h3,
+.preview-header.minimal h3{
+
+    color:#f8fafc;
+
+}
+
+/* ======================================
+   Paper Templates
+====================================== */
+
+.preview-paper.professional{
+
+    border-top:8px solid #2563eb;
+
+}
+
+.preview-paper.modern{
+
+    border-top:8px solid #16a34a;
+
+}
+
+
+.preview-paper.professional{
+
+    background:#ffffff;
+
+    color:#1e293b;
+
+    border-top:8px solid #2563eb;
+
+}
+
+.preview-header.professional{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.preview-paper.modern{
+
+    background:#ffffff;
+
+    border-left:10px solid #0f766e;
+
+}
+
+.preview-header.modern{
+
+    background:#0f766e;
+
+    color:white;
+
+}
+
+.preview-paper.modern h2{
+
+    color:#0f766e;
+
+}
+
+.preview-paper.creative{
+
+    background:#fff7ed;
+
+    border-left:10px solid #9333ea;
+
+}
+
+.preview-header.creative{
+
+    background:linear-gradient(
+        135deg,
+        #9333ea,
+        #ec4899
+    );
+
+    color:white;
+
+}
+
+.preview-paper.creative h2{
+
+    color:#9333ea;
+
+}
+
+.preview-tags span{
+
+    background:#f3e8ff;
+
+}
+
+/* ======================================
+   MINIMAL TEMPLATE
+====================================== */
+
+.preview-paper.minimal{
+
+    background:#ffffff;
+
+    border:none;
+
+    box-shadow:none;
+
+    border-radius:0;
+
+    padding:36px;
+
+}
+
+/* Header */
+
+.preview-header.minimal{
+
+    background:transparent;
+
+    border:none;
+
+    border-bottom:2px solid #111827;
+
+    border-radius:0;
+
+    padding:0 0 18px 0;
+
+    margin-bottom:24px;
+
+    text-align:left;
+
+}
+
+.preview-header.minimal h1{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    letter-spacing:.5px;
+
+    margin:0;
+
+}
+
+.preview-header.minimal h3{
+
+    margin-top:8px;
+
+    color:#6B7280;
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
+
+/* Contact */
+
+.preview-paper.minimal .preview-contact{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.preview-paper.minimal .preview-contact div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:14px;
+
+    color:#374151;
+
+}
+
+.preview-paper.minimal .preview-contact svg{
+
+    color:#111827;
+
+}
+
+/* Social */
+
+.preview-paper.minimal .preview-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.preview-paper.minimal .preview-links div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#374151;
+
+}
+
+.preview-paper.minimal .preview-links svg{
+
+    color:#111827;
+
+}
+
+/* Sections */
+
+.preview-paper.minimal .preview-section{
+
+    margin-bottom:28px;
+
+}
+
+.preview-paper.minimal .preview-section h2{
+
+    font-size:17px;
+
+    color:#111827;
+
+    border-bottom:1px solid #D1D5DB;
+
+    padding-bottom:6px;
+
+    margin-bottom:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.preview-paper.minimal .preview-section p{
+
+    color:#4B5563;
+
+}
+
+/* Items */
+
+.preview-paper.minimal .preview-item h3{
+
+    color:#111827;
+
+    font-size:17px;
+
+    margin:0;
+
+}
+
+.preview-paper.minimal .preview-item strong{
+
+    color:#374151;
+
+    margin-top:4px;
+
+}
+
+.preview-paper.minimal .preview-item p{
+
+    color:#6B7280;
+
+}
+
+/* Skills */
+
+.preview-paper.minimal .preview-tags{
+
+    gap:8px;
+
+}
+
+.preview-paper.minimal .preview-tags span{
+
+    background:none;
+
+    border:1px solid #D1D5DB;
+
+    color:#111827;
+
+    border-radius:4px;
+
+    padding:6px 12px;
+
+}

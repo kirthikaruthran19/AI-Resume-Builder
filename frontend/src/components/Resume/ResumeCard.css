@@ -1,0 +1,333 @@
+.resume-card{
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+}
+
+.resume-card:hover{
+
+    box-shadow:0 22px 50px rgba(37,99,235,.15);
+
+}
+
+/* ===========================
+        HEADER
+=========================== */
+
+.resume-card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.resume-title-section{
+
+    flex:1;
+
+}
+
+.resume-title-section h3{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.4;
+
+    margin-bottom:14px;
+
+    word-break:break-word;
+
+}
+
+.template-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:capitalize;
+
+}
+
+/* ===========================
+        ATS
+=========================== */
+
+.ats-score{
+
+    min-width:90px;
+
+    text-align:right;
+
+}
+
+.ats-score span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#64748B;
+
+    margin-bottom:6px;
+
+    font-weight:600;
+
+}
+
+.ats-score strong{
+
+    font-size:34px;
+
+    color:#10B981;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+        STATS
+=========================== */
+
+.resume-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.stat-box{
+
+    background:#F8FAFC;
+
+    border-radius:18px;
+
+    padding:22px 18px;
+
+    text-align:center;
+
+    border:1px solid #E2E8F0;
+
+    transition:.3s;
+
+}
+
+.stat-box:hover{
+
+    background:#EFF6FF;
+
+    transform:translateY(-3px);
+
+}
+
+.stat-box svg{
+
+    font-size:26px;
+
+    color:#2563EB;
+
+    margin-bottom:12px;
+
+}
+
+.stat-box h4{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    margin-bottom:6px;
+
+}
+
+.stat-box p{
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+/* ===========================
+        ACTION BUTTONS
+=========================== */
+
+.resume-card .resume-actions{
+    display:flex !important;
+    flex-direction:row !important;
+    width:100%;
+    gap:16px;
+    margin-top:auto;
+}
+
+.resume-card .resume-actions > button{
+    all:unset;
+
+    box-sizing:border-box;
+
+    flex:1 1 0;
+
+    height:54px;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    gap:10px;
+
+    padding:0 18px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    transition:.3s;
+
+    user-select:none;
+}
+
+.resume-card .resume-actions > button svg{
+    width:18px;
+    height:18px;
+    flex-shrink:0;
+}
+
+/* Edit */
+
+.resume-card .edit-btn{
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+    color:#fff;
+}
+
+.resume-card .edit-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
+}
+
+/* Delete */
+
+.resume-card .delete-btn{
+    background:#FEF2F2;
+    color:#DC2626;
+}
+
+.resume-card .delete-btn:hover{
+    background:#DC2626;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+@media (max-width:768px){
+
+    .resume-card .resume-actions{
+        flex-direction:column !important;
+    }
+
+    .resume-card .resume-actions > button{
+        width:100%;
+    }
+
+}
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .resume-card{
+
+        padding:24px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .resume-card-header{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .ats-score{
+
+        text-align:left;
+
+    }
+
+    .resume-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .resume-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
