@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = "https://ai-resume-builder-ecn9.onrender.com/api";
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -18,6 +18,7 @@ const publicRoutes = [
 // ========================================
 // Request Interceptor
 // ========================================
+
 api.interceptors.request.use(
 
     (config) => {
@@ -51,6 +52,7 @@ api.interceptors.request.use(
 // ========================================
 // Response Interceptor
 // ========================================
+
 api.interceptors.response.use(
 
     (response) => response,
