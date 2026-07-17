@@ -165,3 +165,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = (
     "whitenoise.storage.CompressedManifestStaticFilesStorage"
 )
+
+import os
+
+if os.getenv("RENDER") == "True":
+    DEBUG = False
