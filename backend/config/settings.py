@@ -8,6 +8,7 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 from datetime import timedelta
+import dj_database_url
 
 # ==========================================================
 # Base Directory
@@ -52,7 +53,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    # Third Party Apps
+    # Third Party
     "rest_framework",
     "rest_framework_simplejwt",
     "corsheaders",
@@ -108,12 +109,23 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # ==========================================================
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    DATABASES = {
+        "default": dj_database_url.parse(
+            DATABASE_URL,
+            conn_max_age=600,
+            ssl_require=True,
+        )
     }
-}
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 
 # ==========================================================
 # Password Validation
@@ -210,9 +222,14 @@ SIMPLE_JWT = {
 
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
+
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
+
 X_FRAME_OPTIONS = "DENY"
+
+# Uncomment after deployment with HTTPS
+# SECURE_SSL_REDIRECT = not DEBUG
 
 # ==========================================================
 # Default Primary Key
